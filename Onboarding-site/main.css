@@ -1,8 +1,13 @@
+/*--- page ---*/
+
 body {
     padding: 0;
     margin: 0;
     background: #f2f6e9;
 }
+
+/*--- nav bar ---*/
+
 .navbar {
     background:#6ab446;
 }
@@ -20,6 +25,8 @@ body {
 .navbar-collapse {
     justify-content: flex-end;
 }
+
+/*--- header ---*/
 
 .header {
     background-image: url('images/header-background.png');
@@ -65,6 +72,8 @@ body {
     color:#000;
 }
 
+/*--- features ---*/
+
 .features {
 	margin: 4em auto;
 	padding: 1em;
@@ -99,6 +108,8 @@ body {
     border: 1px solid #333;
 }
 
+/*--- team section ---*/
+
 .background {
 	background: #dedec8;
 	padding: 4em 0;
@@ -112,12 +123,52 @@ body {
 	-moz-column-count: 4;
 	column-count: 4;
 }
+
 .team .card {
 	background:none;
 	border: none;
 }
+
 .team .card-title {
 	font-size: 1.3rem;
 	margin-bottom: 0;
 	text-transform: uppercase;
+}
+
+/*--- footer ---*/
+
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+/*-- media queries for mobile --*/
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .description h1 {
+        font-size: 2em;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        margin: 0;
+    }
 }
